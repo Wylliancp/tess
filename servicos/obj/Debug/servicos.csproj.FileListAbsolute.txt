@@ -1,0 +1,30 @@
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\servicos.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\servicos.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\persistencia.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\EntityFramework.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\persistencia.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\persistencia.dll.config
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\bin\Debug\EntityFramework.xml
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\obj\Debug\servicos.csprojAssemblyReference.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\obj\Debug\servicos.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\obj\Debug\servicos.csproj.CopyComplete
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\obj\Debug\servicos.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\servicos\obj\Debug\servicos.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\servicos.dll
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\servicos.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\persistencia.dll
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\EntityFramework.dll
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\persistencia.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\persistencia.dll.config
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\bin\Debug\EntityFramework.xml
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\obj\Debug\servicos.csprojAssemblyReference.cache
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\obj\Debug\servicos.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\obj\Debug\servicos.csproj.CopyComplete
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\obj\Debug\servicos.dll
+C:\Users\wyllianpereira\Source\Repos\tess\servicos\obj\Debug\servicos.pdb

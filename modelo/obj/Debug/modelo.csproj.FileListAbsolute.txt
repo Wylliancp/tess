@@ -1,0 +1,13 @@
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\obj\Debug\modelo.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\obj\Debug\modelo.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\modelo\obj\Debug\modelo.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\obj\Debug\modelo.csprojAssemblyReference.cache
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\obj\Debug\modelo.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\obj\Debug\modelo.dll
+C:\Users\wyllianpereira\Source\Repos\tess\modelo\obj\Debug\modelo.pdb

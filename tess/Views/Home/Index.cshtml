@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello World with Angular Js</title>
+    <script src="~/scripts/angular.js" type="text/javascript"></script>
+    <script src="~/scripts/Angular/eventModule.js" type="text/javascript"></script>
+    <script src="~/scripts/Angular/eventController.js" type="text/javascript"></script>
+</head>
+<body ng-app="eventModule" style="font-family:Verdana, Verdana, Geneva, 'DejaVu Sans', sans-serif">
+    <div>
+        <table ng-controller="eventController">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>OUTRO</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="talk in talks">
+                        <td>{{talk.id}}</td>
+                        <td>{{talk.name}}</td>
+                        <td>{{talk.speaker}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

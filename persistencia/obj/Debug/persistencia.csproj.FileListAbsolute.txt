@@ -1,0 +1,34 @@
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\persistencia.dll.config
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\persistencia.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\persistencia.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\EntityFramework.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\EntityFramework.xml
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.csprojAssemblyReference.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\tess.Migrations.initial.resources
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.csproj.GenerateResource.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.csproj.CopyComplete
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.dll
+C:\Users\wyllianpereira\Documents\Visual Studio 2015\Projects\tess\persistencia\obj\Debug\persistencia.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\persistencia.dll.config
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\persistencia.dll
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\persistencia.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\EntityFramework.dll
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\modelo.dll
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\modelo.pdb
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\modelo.dll.config
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\EntityFramework.xml
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.csprojAssemblyReference.cache
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations.initial.resources
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.csproj.GenerateResource.cache
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.csproj.CoreCompileInputs.cache
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.csproj.CopyComplete
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.dll
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\persistencia.pdb
