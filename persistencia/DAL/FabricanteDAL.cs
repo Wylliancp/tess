@@ -1,6 +1,6 @@
 ﻿using modelo.Tabelas;
 using persistencia.Context;
-using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,7 @@ namespace persistencia.DAL
         
         public Fabricante ObterFabricantePorId(long id)
         {
-            var fabricante = context.Fabricantes.Where(x => x.FabricanteID == id).First();               
+            var fabricante = context.Fabricantes.Where(x => x.FabricanteID == id).Include("Produtos.Categorias").First();               
             return fabricante;
         }
 
