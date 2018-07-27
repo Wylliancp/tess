@@ -4,47 +4,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
-</head>
-<body>
-    <div>
-        <h4>Compra</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.Pessoa.Nome)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Pessoa.Nome)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Produto.Nome)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Produto.Nome)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.DataCompra)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.DataCompra)
-            </dd>
-    
-        </dl>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Visualizando detalhes de uma Compra
     </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.CompraId }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
-</body>
-</html>
+    <div class="panel-body">
+        @Html.Partial("~/Views/Compras/_PartialDetailsContentPanelCompras.cshtml", Model)
+    </div>
+    <div class="panel-footer panel-info">
+        @Html.ActionLink("Alterar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-info" })
+        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-info" })
+    </div>
+</div>
+
+
+@section ScriptPage {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').removeClass("active");
+            $('#liProdutos').addClass("active");
+        });
+    </script>
+}
