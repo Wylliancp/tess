@@ -6,8 +6,9 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        Visualizando detalhes da Categoria a ser removido
+        Categoria a ser removido
     </div>
+    <br />
     <div class="panel-body">
         <div class="form-group">
             @Html.LabelFor(model => model.Nome)<br />
@@ -21,7 +22,7 @@
     </div>
     <div class="panel-footer panel-info">
         <a href="#" class="btn btn-info" data-toggle="modal" data-target="#deleteConfirmationModal">Remover</a>
-        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-info" })
+        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-warning" })
     </div>
 </div>
 

@@ -6,14 +6,15 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        Visualizando detalhes de um PRODUTO
+        Detalhes do Produto
     </div>
+    <br />
     <div class="panel-body">
         @Html.Partial("~/Views/Produtos/_PartialDetailsContentPanel.cshtml", Model)
     </div>
     <div class="panel-footer panel-info">
         @Html.ActionLink("Alterar", "Edit", new { id = Model.ProdutoId }, new { @class = "btn btn-info" })
-        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-info" })
+        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-warning" })
     </div>
 </div>
 

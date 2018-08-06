@@ -108,8 +108,10 @@ namespace tess.Controllers
                 if (ModelState.IsValid)
                 {
                     produtoServico.GravarProduto(produto);
+                    PopularViewBag(produto);
                     return RedirectToAction("Index");
                 }
+                PopularViewBag(produto);
                 return View(produto);
             }
             catch (Exception e)

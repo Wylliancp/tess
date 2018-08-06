@@ -10,14 +10,14 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="page-header bg-danger">
-                <h1>Desenvolvimento em ASP.NET MVC <small class="text-danger">Utilizando o Bootstrap</small></h1>
+            <div class="page-header col-xs-12 col-md-12 badge-warning">
+                <h1>TESS ASP.NET MVC <small class="text-danger"> Aplicação Modelo</small></h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-3 col-md-3 bg-success">
-                <ul class="nav nav-pills nav-stacked">
+            <div class="col-xs-4 col-md-3 badge-pill">
+                <ul class="buttons-collection">
                     <li id="liHome" role="presentation" class="active"><a href="#">Home</a></li>
                     <li id="liCategorias" role="presentation">@Html.ActionLink("Categorias", "Index", "Categorias")</li>
                     <li id="liFabricantes" role="presentation">@Html.ActionLink("Fabricantes", "Index", "Fabricante")</li>
@@ -26,7 +26,7 @@
                     <li id="liProdutos" role="presentation">@Html.ActionLink("Pessoas", "Index", "Pessoas")</li>
                 </ul>
             </div>
-            <div class="col-xs-9 col-md-9">
+            <div class="col-xl-9 col-md-9 badge-light">
                 <br />
                 @RenderBody()
             </div>
@@ -34,7 +34,7 @@
 
         <br />
         <div class="row">
-            <div class="col-xs-12 col-md-12 bg-danger">
+            <div class="col-xs-12 col-md-12 badge-warning">
                 <small>Layout com Bootstrap</small>
             </div>
         </div>

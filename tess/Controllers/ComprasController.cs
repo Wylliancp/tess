@@ -109,8 +109,10 @@ namespace tess.Controllers
                 if (ModelState.IsValid)
                 {
                     compraServico.GravarCompra(compra);
+                    PopularViewBag(compra);
                     return RedirectToAction("Index");
                 }
+                PopularViewBag(compra);
                 return View(compra);
             }
             catch (Exception e)

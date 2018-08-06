@@ -15,8 +15,9 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        Relação de FABRICANTES registrados
+        Pessoas
     </div>
+    <br />
     <div class="panel-body">
         <table class="table table-striped table-hover">
             <thead>
@@ -30,27 +31,28 @@
                     <th>
                         @Html.DisplayNameFor(model => model.sobrenome)
                     </th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model)
                 {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.sobrenome)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Alterar", "Edit", new { id = item.Id }) |
-                        @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
-                        @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.sobrenome)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Alterar", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Detalhes", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
                 }
             </tbody>
         </table>
@@ -61,17 +63,17 @@
 </div>
 
 @section styles{
-    <link href="@Url.Content("~/content/DataTables/css/dataTables.bootstrap.css")" rel="stylesheet">
+    <!--  <link href="@Url.Content("~/content/DataTables/css/dataTables.bootstrap.css")" rel="stylesheet"> -->
 }
 
 @section ScriptPage {
-    <script src="@Url.Content("~/scripts/DataTables/jquery.dataTables.js")"></script>
-    <script src="@Url.Content("~/scripts/DataTables/dataTables.bootstrap.js")"></script>
-    <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('.table').dataTable({
-                                "order": [[1, "asc"]]
-                            });
-                        });
-    </script>
+    <!--   <script src="@Url.Content("~/scripts/DataTables/jquery.dataTables.js")"></script>
+        <script src="@Url.Content("~/scripts/DataTables/dataTables.bootstrap.js")"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.table').dataTable({
+                    "order": [[1, "asc"]]
+                });
+            });
+        </script> -->
 }

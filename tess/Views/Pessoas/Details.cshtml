@@ -7,8 +7,9 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        Visualizando detalhes de uma Pessoa
+        Detalhes da Pessoa
     </div>
+    <br />
     <div class="panel-body">
         <div class="form-group">
             @Html.LabelFor(model => model.Nome)<br />
@@ -31,7 +32,7 @@
     </div>
     <div class="panel-footer panel-info">
         @Html.ActionLink("Alterar", "Edit", new { id = Model.Id }, new { @class = "btn btn-info" })
-        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-info" })
+        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-warning" })
     </div>
 </div>
 

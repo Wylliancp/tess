@@ -13,8 +13,9 @@
 
 <div class="panel panel-primary">
     <div class="panel-heading">
-        Relação de PRODUTOS registrados
+        Produtos
     </div>
+    <br />
     <div class="panel-body">
         <table class="table table-striped table-hover">
             <thead>
@@ -27,6 +28,7 @@
                     </th>
                     <th>Categoria</th>
                     <th>Fabricante</th>
+                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
@@ -56,25 +58,25 @@
         </table>
     </div>
     <div class="panel-footer panel-info">
-        @Html.ActionLink("Registrar um novo PRODUTO", "Create", null, new { @class = "btn btn-success" })
+        @Html.ActionLink("Registrar um novo Produto", "Create", null, new { @class = "btn btn-success" })
     </div>
 </div>
 
 
 @section styles{
-    <link href="@Url.Content("~/content/DataTables/css/dataTables.bootstrap.css")" rel="stylesheet">
+    <!-- <link href="@Url.Content("~/content/DataTables/css/dataTables.bootstrap.css")" rel="stylesheet"> -->
 }
 
 @section ScriptPage {
-    <script src="@Url.Content("~/scripts/DataTables/jquery.dataTables.js")"></script>
-    <script src="@Url.Content("~/scripts/DataTables/dataTables.bootstrap.js")"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('li').removeClass("active");
-            $('#liProdutos').addClass("active");
-            $('.table').dataTable({
-                "order": [[1, "asc"]]
-            });
-        });
-    </script>
+    <!-- <script src="@Url.Content("~/scripts/DataTables/jquery.dataTables.js")"></script>
+     <script src="@Url.Content("~/scripts/DataTables/dataTables.bootstrap.js")"></script>
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('li').removeClass("active");
+             $('#liProdutos').addClass("active");
+             $('.table').dataTable({
+                 "order": [[1, "asc"]]
+             });
+         });
+     </script> -->
 }

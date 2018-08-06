@@ -57,6 +57,22 @@
     <Compile Include="Migrations\201807192036428_initial.Designer.cs">
       <DependentUpon>201807192036428_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808011655551_validacao.cs" />
+    <Compile Include="Migrations\201808011655551_validacao.Designer.cs">
+      <DependentUpon>201808011655551_validacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808061656435_validacao1.cs" />
+    <Compile Include="Migrations\201808061656435_validacao1.Designer.cs">
+      <DependentUpon>201808061656435_validacao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808061724021_inclusaodatacadastro.cs" />
+    <Compile Include="Migrations\201808061724021_inclusaodatacadastro.Designer.cs">
+      <DependentUpon>201808061724021_inclusaodatacadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808061729381_alteracao.cs" />
+    <Compile Include="Migrations\201808061729381_alteracao.Designer.cs">
+      <DependentUpon>201808061729381_alteracao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -73,6 +89,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807192036428_initial.resx">
       <DependentUpon>201807192036428_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808011655551_validacao.resx">
+      <DependentUpon>201808011655551_validacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808061656435_validacao1.resx">
+      <DependentUpon>201808061656435_validacao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808061724021_inclusaodatacadastro.resx">
+      <DependentUpon>201808061724021_inclusaodatacadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808061729381_alteracao.resx">
+      <DependentUpon>201808061729381_alteracao.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
