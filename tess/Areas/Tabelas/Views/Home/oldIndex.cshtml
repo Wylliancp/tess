@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello World with Angular Js</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+</head>
+<body ng-app="myApp" style="font-family:Verdana, Verdana, Geneva, 'DejaVu Sans', sans-serif">
+    <div> 
+        <h1 ng-controller="HelloWorldCtrl">
+            {{helloWorldMessage}}
+        </h1>
+    </div>
+    <div ng-init="talks = [
+                { id: '100', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+                { id: '101', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+                { id: '102', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+                { id: '103', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+                { id: '104', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+                { id: '105', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' }
+            ]">
+        <h2>talk Details</h2>
+    </div>
+    <div>
+        <table @*ng-controller="eventCtrl*@">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>OUTRO</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="talk in talks">
+                        <td>{{talk.id}}</td>
+                        <td>{{talk.name}}</td>
+                        <td>{{talk.speaker}}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        var myApp = angular.module('myApp', []);
+
+        myApp.controller('HelloWorldCtrl', function ($scope) {
+            $scope.helloWorldMessage = "Hello World with AngularJs on " + (new Date()).toDateString();
+        });
+        //var eventModule = angular.module('eventModule', []);
+
+        //myApp.controller('eventCtrl', function ($scope) {
+        //    $scope.talks = [
+        //        { id: '100', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+        //        { id: '101', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+        //        { id: '102', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+        //        { id: '103', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+        //        { id: '104', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' },
+        //        { id: '105', name: 'Real Time Web Applications with SignaLr', speaker: 'Brij Bhushan Mishra' }
+        //    ];
+        //});
+    </script>
+</body>
+</html>

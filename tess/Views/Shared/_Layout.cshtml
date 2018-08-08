@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using tess.Infraestrutura
+
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -13,6 +16,19 @@
             <div class="page-header col-xs-12 col-md-12 badge-warning">
                 <h1>TESS ASP.NET MVC <small class="text-danger"> Aplicação Modelo</small></h1>
             </div>
+            <div style="text-align:right;">
+                @{
+                    if (Html.GetAuthenticatedUser().ToString() != "")
+                    {
+                        @Html.GetAuthenticatedUser();
+                        @Html.ActionLink(" - Sair", "Logout", "Account");
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Acessar", "Login", "Account", new { area = "Seguranca" }, null);
+                    }
+                }
+            </div>
         </div>
 
         <div class="row">
@@ -22,8 +38,10 @@
                     <li id="liCategorias" role="presentation">@Html.ActionLink("Categorias", "Index", "Categorias")</li>
                     <li id="liFabricantes" role="presentation">@Html.ActionLink("Fabricantes", "Index", "Fabricante")</li>
                     <li id="liProdutos" role="presentation">@Html.ActionLink("Produtos", "Index", "Produtos")</li>
-                    <li id="liProdutos" role="presentation">@Html.ActionLink("Compras", "Index", "Compras")</li>
-                    <li id="liProdutos" role="presentation">@Html.ActionLink("Pessoas", "Index", "Pessoas")</li>
+                    <li id="liCompras" role="presentation">@Html.ActionLink("Compras", "Index", "Compras")</li>
+                    <li id="liPessoas" role="presentation">@Html.ActionLink("Pessoas", "Index", "Pessoas")</li>
+                    <li id="liUsuarios" role="presentation">@Html.ActionLink("Usuario", "Index", "Admin", new { area = "Seguranca" }, null)</li>
+                    <li id="liPapeis" role="presentation">@Html.ActionLink("Papéis", "Index", "PapelAdmin", new { area = "Seguranca" }, null)</li>
                 </ul>
             </div>
             <div class="col-xl-9 col-md-9 badge-light">
@@ -41,6 +59,8 @@
     </div>
     <script src="@Url.Content("~/scripts/jquery-3.0.0.js")"></script>
     <script src="@Url.Content("~/scripts/bootstrap.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
     @RenderSection("ScriptPage", false)
 </body>
 </html>

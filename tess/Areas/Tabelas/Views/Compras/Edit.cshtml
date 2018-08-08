@@ -1,0 +1,39 @@
+﻿@model modelo.Tabelas.Compra
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Alteração da Compra
+        </div>
+        <br />
+        <div class="panel-body">
+           @Html.HiddenFor(model => model.CompraId)
+           @Html.Partial("~/Areas/Tabelas/Views/Compras/_PartialEditContentPanelCompras.cshtml", Model)
+
+                <div class="panel-footer panel-info">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Gravar alterações" class="btn btn-info" />
+                        @Html.ActionLink("Retornar para a listagem de Compras", "Index", null, new { @class = "btn btn-warning" })
+                    </div>
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+
+}
+@section ScriptPage {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').removeClass("active");
+            $('#liProdutos').addClass("active");
+        });
+    </script>
+}
+
