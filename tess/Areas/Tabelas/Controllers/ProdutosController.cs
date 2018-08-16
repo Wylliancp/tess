@@ -2,6 +2,7 @@
 using servicos.Tabelas;
 using System;
 using System.Net;
+using System.Web;
 using System.Web.Mvc;
 
 namespace tess.Areas.Tabelas.Controllers
@@ -33,9 +34,9 @@ namespace tess.Areas.Tabelas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Produto produto)
+        public ActionResult Create(Produto produto, HttpPostedFileBase logotipo = null)
         {
-            return GravarProduto(produto);
+            return GravarProduto(produto, logotipo, null);
         }
 
         public ActionResult Edit(long id)
@@ -47,9 +48,9 @@ namespace tess.Areas.Tabelas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Produto produto)
+        public ActionResult Edit(Produto produto, HttpPostedFileBase logotipo = null, string chkRemoverImagem = null)
         {
-            return GravarProduto(produto);
+            return GravarProduto(produto, logotipo, chkRemoverImagem);
         }
 
         public ActionResult Delete(long? id)
@@ -101,12 +102,21 @@ namespace tess.Areas.Tabelas.Controllers
             }
         }
 
-        private ActionResult GravarProduto(Produto produto)
+        private ActionResult GravarProduto(Produto produto, HttpPostedFileBase logotipo, string chkRemoverImagem)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
+                    if(chkRemoverImagem != null)
+                    {
+                        produto.LogoTipo = null;
+                    }
+                    if ( logotipo != null)
+                    {
+                        produto.LogotipoMimeType = logotipo.ContentType;
+                        produto.LogoTipo = SetLogotipo(logotipo);
+                    }
                     produtoServico.GravarProduto(produto);
                     PopularViewBag(produto);
                     return RedirectToAction("Index");
@@ -120,6 +130,22 @@ namespace tess.Areas.Tabelas.Controllers
             }
         }
 
+        private byte[] SetLogotipo(HttpPostedFileBase logotipo)
+        {
+            var bytesLogotipo = new byte[logotipo.ContentLength];
+            logotipo.InputStream.Read(bytesLogotipo, 0, logotipo.ContentLength);
+            return bytesLogotipo;
+        }
+
+        public FileContentResult GetLogotipo(long id)
+        {
+            Produto produto = produtoServico.ObterProdutoPorId(id);
+            if (produto != null)
+            {
+                return File(produto.LogoTipo, produto.LogotipoMimeType);
+            }
+            return null;
+        }
     }
 }
 //        private EFContext context = new EFContext();

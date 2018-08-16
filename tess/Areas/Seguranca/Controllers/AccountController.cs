@@ -19,7 +19,7 @@ namespace tess.Areas.Seguranca.Controllers
         public ActionResult Logout()
         {
             AuthManager.SignOut();
-            return RedirectToAction("Index", "Home", new { area = "" });
+            return RedirectToAction("Index", "Pessoas", new { area = "Tabelas"});
         }
         
         public ActionResult Login(string returnUrl)

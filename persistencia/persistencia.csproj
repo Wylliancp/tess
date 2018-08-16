@@ -73,6 +73,10 @@
     <Compile Include="Migrations\201808061729381_alteracao.Designer.cs">
       <DependentUpon>201808061729381_alteracao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808082230179_atualizacaoProduto.cs" />
+    <Compile Include="Migrations\201808082230179_atualizacaoProduto.Designer.cs">
+      <DependentUpon>201808082230179_atualizacaoProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -101,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808061729381_alteracao.resx">
       <DependentUpon>201808061729381_alteracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808082230179_atualizacaoProduto.resx">
+      <DependentUpon>201808082230179_atualizacaoProduto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

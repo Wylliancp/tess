@@ -30,6 +30,11 @@ namespace modelo.Tabelas
         public Categoria Categorias { get; set; }
         public Fabricante Fabricantes { get; set; }
 
+        public string  LogotipoMimeType { get; set; }
+        public Byte[] LogoTipo { get; set; }
+        public string NomeArquivo { get; set; }
+        public long TamanhoArquivo { get; set; }
+
         public virtual ICollection<Compra> Compra { get; set; }
 
     }

@@ -36,3 +36,4 @@ C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations
 C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations.validacao1.resources
 C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations.inclusaodatacadastro.resources
 C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations.alteracao.resources
+C:\Users\wyllianpereira\Source\Repos\tess\persistencia\obj\Debug\tess.Migrations.atualizacaoProduto.resources
