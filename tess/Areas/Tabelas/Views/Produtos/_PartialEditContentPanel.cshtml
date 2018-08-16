@@ -40,7 +40,7 @@
     </div>
     <div class="col-md-offset-7 col-md-5">
         <div class="form-group">
-            <input type="file" name="logotipo" id="logotipo" onchange='$("#upload-fileinfo").html($(this).val());'>
+            <input type="file" name="logoTipo" id="logoTipo" onchange='$("#upload-fileinfo").html($(this).val());'>
             <span id="upload-file-info"></span>
         </div>
 
@@ -60,7 +60,7 @@
                             <input type="checkbox" name="chkRemoverImagem" value="Sim">Remover imagem
                         </label>
                     </div>
-                    @Html.ActionLink("Baixar o arquivo : " + Model.NomeArquivo, "DownloadArquivo", "Produtos", new { area = "Cadastros", id = Model.ProdutoId }, null)
+                    @Html.ActionLink("Baixar o arquivo : " + Model.NomeArquivo, "DownloadArquivo", "Produtos", new { area = "Tabelas", id = Model.ProdutoId }, null)
                 </div>
             }
         </div>

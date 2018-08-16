@@ -12,6 +12,7 @@ using tess.Infraestrutura;
 
 namespace tess.Areas.Seguranca.Controllers
 {
+    [Authorize(Roles = "administradores")]
     public class PapelAdminController : Controller
     {
         // GET: Seguranca/PapelAdmin

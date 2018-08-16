@@ -19,6 +19,8 @@ namespace modelo.Tabelas
 
         [Required(ErrorMessage = "Informe a data de cadastro")]
         //[DataType(DataType.Date)]
+        [DisplayName("Data de Cadastro")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
         public DateTime DataCadastro { get; set; }
 
         [DisplayName("Categoria")]

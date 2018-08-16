@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace tess.Areas.Tabelas.Controllers
 {
+    [Authorize(Roles = "administradores")]
     public class FabricanteController : Controller
     {
 

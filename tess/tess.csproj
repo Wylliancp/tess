@@ -1006,7 +1006,9 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="TempData\" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808071808564_identity.resx">
       <DependentUpon>201808071808564_identity.cs</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿using modelo.Tabelas;
 using servicos.Tabelas;
 using System;
+using System.IO;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
@@ -29,7 +30,7 @@ namespace tess.Areas.Tabelas.Controllers
         public ActionResult Create()
         {
             PopularViewBag();
-            return View();
+            return View(new Produto());
         }
 
         [HttpPost]
@@ -114,11 +115,13 @@ namespace tess.Areas.Tabelas.Controllers
                     }
                     if ( logotipo != null)
                     {
+                        produto.NomeArquivo = logotipo.FileName;
+                        produto.TamanhoArquivo = logotipo.ContentLength;
                         produto.LogotipoMimeType = logotipo.ContentType;
                         produto.LogoTipo = SetLogotipo(logotipo);
                     }
                     produtoServico.GravarProduto(produto);
-                    PopularViewBag(produto);
+                    //PopularViewBag(produto);
                     return RedirectToAction("Index");
                 }
                 PopularViewBag(produto);
@@ -145,6 +148,16 @@ namespace tess.Areas.Tabelas.Controllers
                 return File(produto.LogoTipo, produto.LogotipoMimeType);
             }
             return null;
+        }
+
+        public ActionResult DownloadArquivo(long id)
+        {
+            Produto produto = produtoServico.ObterProdutoPorId(id);
+            FileStream fileStream = new FileStream(Server.MapPath("~/TempData/" + produto.NomeArquivo), FileMode.Create, FileAccess.Write);
+            fileStream.Write(produto.LogoTipo, 0, Convert.ToInt32(produto.TamanhoArquivo));
+            fileStream.Close();
+
+            return File(fileStream.Name, produto.LogotipoMimeType, produto.NomeArquivo);
         }
     }
 }
