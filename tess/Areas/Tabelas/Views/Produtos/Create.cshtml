@@ -14,6 +14,7 @@
         </div>
         <br />
         <div class="panel-body">
+            @Html.HiddenFor(model => model.LogoTipo)
             @Html.Partial("~/Areas/Tabelas/Views/Produtos/_PartialEditContentPanel.cshtml", Model)
         </div>
         <div class="panel-footer panel-info">
