@@ -927,6 +927,7 @@
     <Content Include="scripts\umd\popper-utils.min.js" />
     <Content Include="scripts\umd\popper.js" />
     <Content Include="scripts\umd\popper.min.js" />
+    <Content Include="TempData\404.jpg" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Web.config">
@@ -951,6 +952,7 @@
     <Compile Include="Areas\Tabelas\Controllers\ProdutosController.cs" />
     <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
     <Compile Include="DAL\IdentityDbContextAplicacao.cs" />
+    <Compile Include="Erro\ErrorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -980,6 +982,9 @@
     <Content Include="scripts\popper.js.map" />
     <Content Include="scripts\popper-utils.min.js.map" />
     <Content Include="scripts\popper-utils.js.map" />
+    <Content Include="Views\Errors\General.cshtml" />
+    <Content Include="Views\Errors\Http400.cshtml" />
+    <Content Include="Views\Errors\Http404.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1006,9 +1011,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TempData\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201808071808564_identity.resx">
       <DependentUpon>201808071808564_identity.cs</DependentUpon>

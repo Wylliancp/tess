@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>General</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        #image {
+            position: absolute;
+        }
+
+        #texto {
+            position: absolute;
+            font-size: 32px;
+            left: 250px;
+            top: 135px;
+        }
+    </style>
+</head>
+<body style="background-image:url('~/TempData/404.jpg')" >
+    <div class="container">
+        <img id="image" src="~/TempData/404.jpg">
+        <h1 id="texto" >500</h1>
+        <h2 id="texto" >Houston, temos um problema.</h2>
+        <p id="texto" >
+            Infelizmente um erro interno ocorreu. Por favor, tente mais tarde ou entre em contato com o suporte.
+            <br /><br />
+            @HttpContext.Current.Session["ErrorException"].ToString().Substring(0, 400)
+        </p>
+        <p id="texto" >
+            <a href='@Url.Action("Index", "Home")'>
+                Retornar ao início
+            </a>
+            <br>
+        </p>
+    </div>
+</body>
+</html>
